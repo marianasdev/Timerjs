@@ -28,9 +28,8 @@ function setTimer(){
     <p class="number">${minutes > 9 ? minutes : ('0' + minutes)} </p><span>Min</span>
     <p class="number">${seconds > 9 ? seconds : ('0' + seconds)} </p><span>Seg</span>`;
 
-    document.title = `<p class="number">${hours > 9 ? hours : ('0' + hours)} </p><span>:</span>
-    <p class="number">${minutes > 9 ? minutes : ('0' + minutes)} </p><span>:</span>
-    <p class="number">${seconds > 9 ? seconds : ('0' + seconds)} </p><span>:</span>`
+    document.title = `${hours > 9 ? hours : ('0' + hours)} : ${minutes > 9 ? minutes : ('0' + minutes)} :
+    ${seconds > 9 ? seconds : ('0' + seconds)} `;
     }
 
 function countDown() {
